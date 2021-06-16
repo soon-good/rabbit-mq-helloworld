@@ -1,6 +1,23 @@
 spring:
   rabbitmq:
-    host: localhost
-    port: 5673
-    username: mqadmin
-    password: 1111
+    host: 호스트 주소 입력
+    port: 5671
+    username: 아이디
+    password: 비번
+    ssl:
+      enabled: true
+    listener:
+      simple:
+        acknowledge-mode: manual
+
+---
+# 제일 처음 연습해본 예제. Publish 를 직접 화면에서 클릭해서 넣어야 한다는 단점이 있다.
+#spring:
+#  profiles:
+#    active: default-exchange-test1
+
+---
+#spring:
+#  config:
+#    activate:
+#      on-profile: topic-test1
