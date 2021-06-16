@@ -15,6 +15,36 @@
 
 나의 경우는 디폴트 어드민이 있는 것을 활용했다.<br>
 
+## 로컬 개발환경 RabbitMQ 구동 
+### docker 쉘스크립트
+docker 쉘 스크립트를 미리 만들어 두었는데, 이 스크립트를 사용하면 컨테이너명이 rabbitmq-local 이라는 이름으로 생성된다.
+<br>
+#### rabbitmq 구동
+```bash
+$ source docker-rabbitmq-start.sh
+```
+<br>
+
+#### rabbitmq 컨테이너 조회
+```bash
+$ source docker-rabbitmq-ls.sh
+```
+<br>
+
+#### rabbitmq 컨테이너 중지
+
+```bash
+$ source docker-rabbitmq-stop.sh
+```
+
+### docker compose 방식
+
+docker-compose 명령어를 사용해도 되고, 미리 만들어 둔 docker 스크립트를 사용해 구동해도 된다.<br>
+- docker-compose 명령<br>
+  - docker-compose up<br>
+- docker 쉘 스크립트 구동<br>
+  - source docker-rabbitmq-start.sh<br>
+<br>
 
 ## 로그인
 mqadmin/1111 을 ID/PW 로 지정해서 로그인이 가능하도록 지정해두었다.<br>
