@@ -11,8 +11,8 @@
 	<groupId>io.study.rabbitmq</groupId>
 	<artifactId>mqhelloworld</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>mqhelloworld</name>
-	<description>스프링 인 액션 예제</description>
+	<name>rabbit-mq-helloworld</name>
+	<description>그냥 예제</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
